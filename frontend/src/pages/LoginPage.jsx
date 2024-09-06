@@ -25,13 +25,18 @@ const LoginPage = () => {
             newUrl += "/users/login"
         }
 
-        const response = await axios.post(newUrl, data);
+        try{
+            const response = await axios.post(newUrl, data);
         sessionStorage.setItem("token", response.data.token);
         if(response.data.sucess){
             console.log("login success", response.data.token);
             navigate('/');
         }else{
             console.log("login failed");
+        }
+        }catch(error){
+            console.log("login failed", error);
+            alert("login failed please try again");
         }
 
     };
