@@ -12,7 +12,7 @@ const Footer = () => {
 
       <div className="flex flex-col items-center justify-center w-full h-20 gap-2 bg-green-900 md:flex-row md:h-12">
         <div className="flex justify-center items-center text-white w-full md:w-[60%] md:justify-start lg:w-[70%]">
-            <p className="md:ml-8">get connected us on social neyworks:</p>
+            <p className="md:ml-8">get connected us on social networks:</p>
         </div>
         <div className="flex justify-center gap-12 items-center text-white w-full md:w-[40%] lg:w-[30%]">
           <TiSocialFacebook className="text-2xl cursor-pointer"/>
